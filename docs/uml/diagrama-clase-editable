@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" modified="2026-11-23T17:00:00.000Z" agent="Codex" version="24.7.17" type="device">
+  <diagram id="parkcontrol-uml" name="Clases de ParkControl">
+    <mxGraphModel dx="1800" dy="1400" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pkg-ui" value="PRESENTACIÓN · aplicación de consola" style="swimlane;html=1;startSize=34;horizontal=1;rounded=1;arcSize=10;fillColor=#eaf3ff;swimlaneFillColor=#ffffff;strokeColor=#6a9ed4;fontColor=#243247;fontStyle=1;fontSize=16;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="45" width="1700" height="175" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-service" value="SERVICIO · reglas de negocio" style="swimlane;html=1;startSize=34;horizontal=1;rounded=1;arcSize=10;fillColor=#f2edff;swimlaneFillColor=#ffffff;strokeColor=#9880d4;fontColor=#243247;fontStyle=1;fontSize=16;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="230" width="1700" height="355" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-model" value="MODELO · dominio y datos en memoria" style="swimlane;html=1;startSize=34;horizontal=1;rounded=1;arcSize=10;fillColor=#e9f8f3;swimlaneFillColor=#ffffff;strokeColor=#54a88b;fontColor=#243247;fontStyle=1;fontSize=16;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="620" width="1700" height="610" as="geometry" />
+        </mxCell>
+        <mxCell id="app" value="&lt;table style=&quot;width:100%;height:100%;border-collapse:collapse;font-family:Arial,sans-serif;font-size:13px;color:#1f2937&quot;&gt;&lt;tr&gt;&lt;td style=&quot;background-color:#e7eef8;text-align:center;font-weight:bold;padding:8px;border-bottom:1px solid #8796a8&quot;&gt;ParqueaderoApp&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top;padding:7px 10px;border-bottom:1px solid #b7c2cf&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top;padding:7px 10px&quot;&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;+ main(args: String[]): void&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=1.5;strokeColor=#52677d;fillColor=#ffffff;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="170" y="90" width="370" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="view" value="&lt;table style=&quot;width:100%;height:100%;border-collapse:collapse;font-family:Arial,sans-serif;font-size:13px;color:#1f2937&quot;&gt;&lt;tr&gt;&lt;td style=&quot;background-color:#e7eef8;text-align:center;font-weight:bold;padding:8px;border-bottom:1px solid #8796a8&quot;&gt;ParqueaderoUI&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top;padding:7px 10px;border-bottom:1px solid #b7c2cf&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top;padding:7px 10px&quot;&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;+ iniciar(): void&lt;/div&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;+ mostrarMenu(): void&lt;/div&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;+ leerOpcion(): int&lt;/div&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;+ mostrarMensaje(texto: String): void&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=1.5;strokeColor=#52677d;fillColor=#ffffff;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="70" width="420" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="service" value="&lt;table style=&quot;width:100%;height:100%;border-collapse:collapse;font-family:Arial,sans-serif;font-size:13px;color:#1f2937&quot;&gt;&lt;tr&gt;&lt;td style=&quot;background-color:#e7eef8;text-align:center;font-weight:bold;padding:8px;border-bottom:1px solid #8796a8&quot;&gt;ParqueaderoService&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top;padding:7px 10px;border-bottom:1px solid #b7c2cf&quot;&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;- capacidadMaxima: int&lt;/div&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;- activosPorPlaca: Map&amp;lt;String, Ticket&amp;gt;&lt;/div&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;- historialSalidas: List&amp;lt;Ticket&amp;gt;&lt;/div&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;- HORAS_MINIMAS_COBRO: int = 1&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top;padding:7px 10px&quot;&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;+ registrarEntrada(vehiculo: Vehiculo): Ticket&lt;/div&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;+ registrarSalida(placa: String): Ticket&lt;/div&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;+ consultarCuposLibres(): int&lt;/div&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;+ buscarPorPlaca(placa: String): Ticket&lt;/div&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;+ listarActivos(): List&amp;lt;Ticket&amp;gt;&lt;/div&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;+ generarReporte(): ReporteRecaudo&lt;/div&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;- validarPlaca(placa: String): boolean&lt;/div&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;- calcularTarifa(ticket: Ticket): double&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=1.5;strokeColor=#52677d;fillColor=#ffffff;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="340" y="270" width="870" height="285" as="geometry" />
+        </mxCell>
+        <mxCell id="exception" value="&lt;table style=&quot;width:100%;height:100%;border-collapse:collapse;font-family:Arial,sans-serif;font-size:13px;color:#1f2937&quot;&gt;&lt;tr&gt;&lt;td style=&quot;background-color:#e7eef8;text-align:center;font-weight:bold;padding:8px;border-bottom:1px solid #8796a8&quot;&gt;&lt;div style=&quot;font-size:12px;color:#516173;font-style:italic;text-align:center&quot;&gt;&amp;lt;&amp;lt;exception&amp;gt;&amp;gt;&lt;/div&gt;ParqueaderoException&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top;padding:7px 10px;border-bottom:1px solid #b7c2cf&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top;padding:7px 10px&quot;&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;+ ParqueaderoException(mensaje: String)&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=1.5;strokeColor=#52677d;fillColor=#ffffff;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="335" width="360" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="vehicle" value="&lt;table style=&quot;width:100%;height:100%;border-collapse:collapse;font-family:Arial,sans-serif;font-size:13px;color:#1f2937&quot;&gt;&lt;tr&gt;&lt;td style=&quot;background-color:#e7eef8;text-align:center;font-weight:bold;padding:8px;border-bottom:1px solid #8796a8&quot;&gt;&lt;div style=&quot;font-size:12px;color:#516173;font-style:italic;text-align:center&quot;&gt;&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;/div&gt;Vehiculo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top;padding:7px 10px;border-bottom:1px solid #b7c2cf&quot;&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;- placa: String&lt;/div&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;- marca: String&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top;padding:7px 10px&quot;&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;+ getPlaca(): String&lt;/div&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;+ getMarca(): String&lt;/div&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;+ getTarifaPorHora(): double&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=1.5;strokeColor=#52677d;fillColor=#ffffff;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="115" y="710" width="420" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="car" value="&lt;table style=&quot;width:100%;height:100%;border-collapse:collapse;font-family:Arial,sans-serif;font-size:13px;color:#1f2937&quot;&gt;&lt;tr&gt;&lt;td style=&quot;background-color:#e7eef8;text-align:center;font-weight:bold;padding:8px;border-bottom:1px solid #8796a8&quot;&gt;Carro&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top;padding:7px 10px;border-bottom:1px solid #b7c2cf&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top;padding:7px 10px&quot;&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;+ getTarifaPorHora(): double&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=1.5;strokeColor=#52677d;fillColor=#ffffff;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1010" width="330" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="moto" value="&lt;table style=&quot;width:100%;height:100%;border-collapse:collapse;font-family:Arial,sans-serif;font-size:13px;color:#1f2937&quot;&gt;&lt;tr&gt;&lt;td style=&quot;background-color:#e7eef8;text-align:center;font-weight:bold;padding:8px;border-bottom:1px solid #8796a8&quot;&gt;Moto&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top;padding:7px 10px;border-bottom:1px solid #b7c2cf&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top;padding:7px 10px&quot;&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;+ getTarifaPorHora(): double&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=1.5;strokeColor=#52677d;fillColor=#ffffff;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1010" width="330" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="bike" value="&lt;table style=&quot;width:100%;height:100%;border-collapse:collapse;font-family:Arial,sans-serif;font-size:13px;color:#1f2937&quot;&gt;&lt;tr&gt;&lt;td style=&quot;background-color:#e7eef8;text-align:center;font-weight:bold;padding:8px;border-bottom:1px solid #8796a8&quot;&gt;Bicicleta&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top;padding:7px 10px;border-bottom:1px solid #b7c2cf&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top;padding:7px 10px&quot;&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;+ getTarifaPorHora(): double&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=1.5;strokeColor=#52677d;fillColor=#ffffff;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="900" y="1010" width="350" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="ticket" value="&lt;table style=&quot;width:100%;height:100%;border-collapse:collapse;font-family:Arial,sans-serif;font-size:13px;color:#1f2937&quot;&gt;&lt;tr&gt;&lt;td style=&quot;background-color:#e7eef8;text-align:center;font-weight:bold;padding:8px;border-bottom:1px solid #8796a8&quot;&gt;Ticket&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top;padding:7px 10px;border-bottom:1px solid #b7c2cf&quot;&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;- numero: String&lt;/div&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;- vehiculo: Vehiculo&lt;/div&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;- horaEntrada: LocalDateTime&lt;/div&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;- horaSalida: LocalDateTime&lt;/div&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;- valorTotal: double&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top;padding:7px 10px&quot;&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;+ calcularDuracion(): long&lt;/div&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;+ calcularValorParcial(): double&lt;/div&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;+ cerrar(hora: LocalDateTime): void&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=1.5;strokeColor=#52677d;fillColor=#ffffff;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="680" y="700" width="500" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="report" value="&lt;table style=&quot;width:100%;height:100%;border-collapse:collapse;font-family:Arial,sans-serif;font-size:13px;color:#1f2937&quot;&gt;&lt;tr&gt;&lt;td style=&quot;background-color:#e7eef8;text-align:center;font-weight:bold;padding:8px;border-bottom:1px solid #8796a8&quot;&gt;ReporteRecaudo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top;padding:7px 10px;border-bottom:1px solid #b7c2cf&quot;&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;- totalVehiculosAtendidos: int&lt;/div&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;- totalRecaudado: double&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top;padding:7px 10px&quot;&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;+ agregarSalida(ticket: Ticket): void&lt;/div&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;+ getTotalVehiculosAtendidos(): int&lt;/div&gt;&lt;div style=&quot;text-align:left;padding:2px 0&quot;&gt;+ getTotalRecaudado(): double&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=1.5;strokeColor=#52677d;fillColor=#ffffff;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="1330" y="720" width="370" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="rules-note" value="&lt;b&gt;Reglas clave&lt;/b&gt;&lt;br&gt;Ingreso: validar formato de placa, evitar duplicados y comprobar cupo.&lt;br&gt;Salida: cobrar mínimo 1 hora, guardar el ticket en historial y liberar el cupo." style="shape=note;whiteSpace=wrap;html=1;size=18;fillColor=#fff8db;strokeColor=#d6b656;fontColor=#4b4328;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="1330" y="940" width="370" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="e-app-ui" value="inicia" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeColor=#60758a;strokeWidth=1.5;" edge="1" parent="1" source="app" target="view">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ui-service" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#7657b6;strokeWidth=1.6;" edge="1" parent="1" source="view" target="service">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-service-ticket" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#7657b6;strokeWidth=1.6;exitX=0.299;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="service" target="ticket">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="590" />
+              <mxPoint x="600" y="660" />
+              <mxPoint x="930" y="660" />
+              <mxPoint x="930" y="680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-service-exception" value="lanza ante errores" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#7657b6;strokeWidth=1.6;" edge="1" parent="1" source="service" target="exception">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-service-report" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#7657b6;strokeWidth=1.6;exitX=0.7;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="service" target="report">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1250" y="570" />
+              <mxPoint x="1515" y="570" />
+              <mxPoint x="1515" y="680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-car-vehicle" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;strokeColor=#27866a;strokeWidth=1.7;exitX=0.5;exitY=0;entryX=0.25;entryY=1;" edge="1" parent="1" source="car" target="vehicle">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="265" y="920" />
+              <mxPoint x="220" y="920" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-moto-vehicle" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;strokeColor=#27866a;strokeWidth=1.7;exitX=0.5;exitY=0;entryX=0.75;entryY=1;" edge="1" parent="1" source="moto" target="vehicle">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="665" y="970" />
+              <mxPoint x="430" y="970" />
+              <mxPoint x="430" y="900" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-bike-vehicle" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;strokeColor=#27866a;strokeWidth=1.7;exitX=0.5;exitY=0;entryX=0.92;entryY=1;" edge="1" parent="1" source="bike" target="vehicle">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1075" y="940" />
+              <mxPoint x="500" y="940" />
+              <mxPoint x="500" y="900" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-vehicle-ticket" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;endArrow=none;strokeColor=#27866a;strokeWidth=1.7;" edge="1" parent="1" source="vehicle" target="ticket">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="card-v-one" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontStyle=1;fontColor=#285c4c;" vertex="1" parent="1">
+          <mxGeometry x="535" y="745" width="24" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="card-ticket-many" value="0..*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontStyle=1;fontColor=#285c4c;" vertex="1" parent="1">
+          <mxGeometry x="645" y="745" width="44" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
