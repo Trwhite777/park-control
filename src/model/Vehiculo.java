@@ -19,13 +19,13 @@ public abstract class  Vehiculo {
         this.placa = placa;
     }
 
-    public marca getString() {
-        return String;
+    public String getString() {
+        return marca;
     }
 
     public void setString(String marca) {
         this.marca = marca;
     }
 
-    public abstract double getTarifaPorHora();
+    public abstract int getTarifaPorHora();
 }
