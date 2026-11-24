@@ -47,11 +47,12 @@ El sistema **ParkControl** debe automatizar el ciclo completo de atención de ve
 * **RN-04 (Tarifas diferenciadas por tipo de vehículo):** El valor por hora depende estrictamente de la categoría del vehículo registrado mediante polimorfismo:
 
 | Vehículo | Tarifa por hora |
-| :---.... | :-------------: |
+| :--- | :---: |
 | **Carro** | `$15.000 COP` |
 | **Moto** | `$10.000 COP` |
 | **Camioneta** | `$20.000 COP` |
 | **Bicicleta** | `$600 COP` |
 | **Microbús** | `$22.000 COP` |
+
 * **RN-05 (Normalización de placas):** Toda placa ingresada se convierte automáticamente a mayúsculas y sin espacios en blanco antes de ser validada o almacenada.
 * **RN-06 (Trazabilidad del historial):** Un vehículo solo libera su cupo una vez que se liquida su salida, pasando su ticket de estado *Activo* a *Finalizado* sin posibilidad de eliminación manual para evitar alteraciones en el cierre de caja.
