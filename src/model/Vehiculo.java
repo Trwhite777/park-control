@@ -1,13 +1,13 @@
 
 public abstract class  Vehiculo {
     private String placa;
-    private String marca :
+    private String marca;
 
 
 
     public Vehiculo(String placa , String marca) {
-        this.setPlaca();
-        this.setString();
+        this.setPlaca(placa);
+        this.setString(marca);
     }
 
 
@@ -23,7 +23,9 @@ public abstract class  Vehiculo {
         return String;
     }
 
-    public void setString(marca string) {
-        String = string;
+    public void setString(String marca) {
+        this.marca = marca;
     }
+
+    public abstract double getTarifaPorHora();
 }
