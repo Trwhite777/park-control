@@ -5,8 +5,8 @@ El sistema **ParkControl** debe automatizar el ciclo completo de atención de ve
 
 ## Requisitos Funcionales 
 | Código | Requisito | Descripción | Prioridad | Criterio de aceptación |
-| :----- | :-------- | :---------- | :-------: | :--------------------- |
-| **RF-01** | Registrar ingreso | El sistema debe permitir registrar placa, marca, tipo de vehículo (Carro, Moto, Bicicleta) y hora exacta de entrada generando un ticket único. | Alta | El vehículo queda registrado como activo, se descuenta 1 cupo disponible y el sistema rechaza placas duplicadas, inválidas o ingresos sin cupo. |
+| :--- | :--- | :--- | :---: | :--- |
+| **RF-01** | Registrar ingreso | El sistema debe permitir registrar placa, marca, tipo de vehículo (`Carro`, `Moto`, `Camioneta`, `Bicicleta`, `Microbús`) y hora exacta de entrada generando un ticket único. | Alta | El vehículo queda registrado como activo, se descuenta 1 cupo disponible y el sistema rechaza placas duplicadas, inválidas o ingresos sin cupo. |
 | **RF-02** | Registrar salida y cobro | El sistema debe calcular el tiempo de permanencia por placa, liquidar la tarifa según el tipo de vehículo (mínimo 1 hora completa) y liberar el cupo. | Alta | Calcula el valor exacto a pagar, elimina el vehículo de los activos y guarda el ticket pagado en el historial de salidas. |
 | **RF-03** | Consultar disponibilidad | El sistema debe mostrar en la terminal la capacidad total, los espacios ocupados y los cupos libres en tiempo real. | Alta | Los cupos libres coinciden exactamente con la resta entre la capacidad máxima y los vehículos activos en ese momento. |
 | **RF-04** | Buscar vehículo | El sistema debe permitir consultar por placa si un vehículo está adentro, mostrando su ticket, hora de ingreso, tiempo transcurrido y valor parcial. | Media | Muestra todos los datos del vehículo si está estacionado o lanza un aviso controlado si la placa no se encuentra en el recinto. |
