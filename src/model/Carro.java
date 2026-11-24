@@ -1,4 +1,3 @@
-
 public class Carro extends Vehiculo {
     private static final double TARIFA_CARRO = 15000;
 
