@@ -8,3 +8,46 @@
 
 ## Arquitectura Multicapa
 
+```text
+park-control/
+├── docs/
+│   ├── evidencias/
+│   ├── uml/
+|   |   ├──Copia de Diagrama UML-2026.drawio (1).png
+|   |   └──diagrama-clase-editable
+|   |
+│   ├── 01-planeacion.md
+│   ├── 02-requisitos-y-analisis.md
+│   ├── 03-diseno-y-arquitectura.md
+│   ├── 04-pruebas.md
+│   └── 05-mantenimiento.md
+├── src/
+│   ├── app/
+│   │   └── ParqueaderoApp.java
+│   ├── model/
+│   │   ├── Vehiculo.java
+│   │   ├── Bicicleta.java
+│   │   ├── Camioneta.java
+│   │   ├── Carro.java
+│   │   ├── Microbus.java
+│   │   ├── Moto.java
+│   │   ├── Ticket.java
+│   │   ├── EstadoTicket.java
+│   │   ├── Disponibilidad.java
+│   │   └── ReporteRecaudo.java
+│   ├── repository/
+│   │   └── ParqueaderoRepository.java
+│   ├── service/
+│   │   └── ParqueaderoService.java
+│   ├── view/
+│   │   └── ParqueaderoUI.java
+│   └── exception/
+│       ├── ParqueaderoException.java
+│       ├── ParqueaderoLlenoException.java
+│       ├── VehiculoYaRegistradoException.java
+│       ├── VehiculoNoEncontradoException.java
+│       └── PlacaInvalidaException.java
+├── .gitignore
+└── README.md
+```
+
