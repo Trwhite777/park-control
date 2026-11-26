@@ -8,6 +8,7 @@
 
 ## Arquitectura Multicapa
 
+```text
 park-control/
 ├── docs/
 │   ├── evidencias/
@@ -48,4 +49,5 @@ park-control/
 │       └── PlacaInvalidaException.java
 ├── .gitignore
 └── README.md
+```
 
