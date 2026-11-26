@@ -1,3 +1,5 @@
+package model;
+
 public class Microbus extends Vehiculo {
     private static final int TARIFA_MICROBUS = 22000;
 

@@ -1,4 +1,4 @@
-
+package model;
 public class Moto extends Vehiculo {
     private static final int TARIFA_MOTO = 10000;
 

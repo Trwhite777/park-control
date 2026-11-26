@@ -1,3 +1,5 @@
+package model;
+
 public class Bicicleta extends Vehiculo {
     private static final int TARIFA_BICICLETA = 600;
 

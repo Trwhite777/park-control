@@ -1,4 +1,4 @@
-
+package model;
 public abstract class  Vehiculo {
     private String placa;
     private String marca;
